@@ -1,0 +1,26 @@
+     <!-- Skills progress -->
+     <section class="p-5" id="skills">
+        <div class="container-fluid">
+            <!-- title -->
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-warning display-2">Skills</h1>
+                    <p class="lead text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, a. Omnis, numquam!</p>
+                </div>
+            </div>
+            <!-- end of title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-10 text-secondary">
+                  <div *ngFor='let skill of skills;let i=index' >
+                        <h2>{{skill.name}}</h2>
+                        <div class="progress bg-secondary mb-3" >
+                                <div  class="progress-bar bg-warning"   [style.width]="skill.progress">
+                                    {{skill.progress}}
+                                </div>
+                         </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- end of Skills progress -->

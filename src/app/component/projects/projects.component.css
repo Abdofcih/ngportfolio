@@ -1,0 +1,16 @@
+
+.img{
+  max-height: 125px;
+}
+.heading {
+    font-size: 14px;
+    letter-spacing: 1px;
+    background:#FFC107;
+    width: 70%;
+    opacity: .7;
+    transition: all .5s;
+  }
+  
+  .heading:hover {
+    opacity: 1;
+  }

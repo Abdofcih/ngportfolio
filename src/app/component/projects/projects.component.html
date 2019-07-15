@@ -1,0 +1,32 @@
+     <!-- Projects -->
+     <section class="p-sm-5 p-2 bg-secondary" id="projects">
+        <div class="container-fluid">
+             <!-- title -->
+             <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-warning display-2">Projects</h1>
+                </div>
+            </div>
+            <!-- end of title -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-10 m-sm-auto py-sm-2 mb-4" *ngFor="let project of projects">
+                    <div class="card" >
+                        <img [src]="project?.imgUrl" class="card-img-top img">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="text-white text-uppercase font-weight-bold p-2 heading">{{project.title}}</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <span class="badge badge-info p-1 mx-1" *ngFor="let teq of project.technologies">{{teq}}</span>
+                            </div>
+                            <div class="text-right mt-2">
+                                <a [href]="project.demoUrl" *ngIf="project.demoUrl" target="blank" class="btn btn-warning mr-2 font-weight-bold">Demo</a>
+                                <a [href]="project.codeUrl" *ngIf="project.codeUrl" target="blank" class="btn btn-outline-warning font-weight-bold">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+     </section>
+     <!-- end of Projects -->
